@@ -37,8 +37,7 @@ print(adwentures_of_tom_sawer)
 # task 03 ==
 """ Зробіть так, щоб у тексті було не більше одного пробілу між словами.
 """
-adwentures_of_tom_sawer = adwentures_of_tom_sawer.split()
-adwentures_of_tom_sawer = " ".join(adwentures_of_tom_sawer)
+adwentures_of_tom_sawer = " ".join(adwentures_of_tom_sawer.split())
 print(adwentures_of_tom_sawer)
 
 # task 04
@@ -59,42 +58,42 @@ print(up_words)
 # task 06
 """ Виведіть позицію, на якій слово Tom зустрічається вдруге
 """
-# first_index=adwentures_of_tom_sawer.find("Tom")
-# if first_index !=-1:
-#     second_index=adwentures_of_tom_sawer.find("Tom",first_index+1)
-#     print(second_index)
-
-index = adwentures_of_tom_sawer.find("Tom")
-if index != -1:
-    index = adwentures_of_tom_sawer.find("Tom", index + 1)
-    print(index)
+print("task 06", adwentures_of_tom_sawer.find("Tom", adwentures_of_tom_sawer.find("Tom") + 1))
 
 # task 07
 """ Розділіть змінну adwentures_of_tom_sawer по кінцю речення.
 Збережіть результат у змінній adwentures_of_tom_sawer_sentences
 """
-adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split(".")
-adwentures_of_tom_sawer_sentences = [s for s in adwentures_of_tom_sawer_sentences if s.strip()]
-print(adwentures_of_tom_sawer_sentences)
+adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split(". ")
+adwentures_of_tom_sawer_sentences = [sentences for sentences in adwentures_of_tom_sawer_sentences if sentences]
+print("task 07", adwentures_of_tom_sawer_sentences)
 
 # task 08
 """ Виведіть четверте речення з adwentures_of_tom_sawer_sentences.
 Перетворіть рядок у нижній регістр.
 """
-print(adwentures_of_tom_sawer_sentences[3])
+print("task08", adwentures_of_tom_sawer_sentences[3])
 adwentures_of_tom_sawer_sentences_join = ".".join(adwentures_of_tom_sawer_sentences)
 adwentures_of_tom_sawer_sentences_lower = adwentures_of_tom_sawer_sentences_join.lower()
-print(adwentures_of_tom_sawer_sentences_lower)
+print("task08", adwentures_of_tom_sawer_sentences_lower)
 
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
-find_by = adwentures_of_tom_sawer.find("By the time")
-if find_by != -1:
-    print("Так, є речення що починається з \"By the time\"")
-else:
-    print("Таке речення відсутнє")
+# find_by = adwentures_of_tom_sawer.find("By the time")
+# if find_by != -1:
+#     print("task09", "Так, є речення що починається з \"By the time\"")
+# else:
+#     print("task09", "Таке речення відсутнє")
 
+# for e in adwentures_of_tom_sawer_sentences:
+#     if e.startswith("By the time"):
+#         print("task09",e)
+
+print("task09", adwentures_of_tom_sawer_sentences)
+for s in adwentures_of_tom_sawer_sentences:
+    if s.startswith('By the time'):
+        print("task09", s)
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
