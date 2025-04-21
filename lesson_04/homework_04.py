@@ -76,7 +76,6 @@ print("task08", adwentures_of_tom_sawer_sentences[3])
 adwentures_of_tom_sawer_sentences_join = ".".join(adwentures_of_tom_sawer_sentences)
 adwentures_of_tom_sawer_sentences_lower = adwentures_of_tom_sawer_sentences_join.lower()
 print("task08", adwentures_of_tom_sawer_sentences_lower)
-
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
@@ -84,6 +83,7 @@ print("task09", adwentures_of_tom_sawer_sentences)
 for s in adwentures_of_tom_sawer_sentences:
     if s.startswith('By the time'):
         print("task09", s)
+
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
