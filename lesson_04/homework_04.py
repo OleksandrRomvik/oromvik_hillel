@@ -84,7 +84,6 @@ for s in adwentures_of_tom_sawer_sentences:
     if s.startswith('By the time'):
         print("task09", s)
 
-
 # task 10
 """ Виведіть кількість слів останнього речення з adwentures_of_tom_sawer_sentences.
 """
