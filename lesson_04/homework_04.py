@@ -80,16 +80,6 @@ print("task08", adwentures_of_tom_sawer_sentences_lower)
 # task 09
 """ Перевірте чи починається якесь речення з "By the time".
 """
-# find_by = adwentures_of_tom_sawer.find("By the time")
-# if find_by != -1:
-#     print("task09", "Так, є речення що починається з \"By the time\"")
-# else:
-#     print("task09", "Таке речення відсутнє")
-
-# for e in adwentures_of_tom_sawer_sentences:
-#     if e.startswith("By the time"):
-#         print("task09",e)
-
 print("task09", adwentures_of_tom_sawer_sentences)
 for s in adwentures_of_tom_sawer_sentences:
     if s.startswith('By the time'):
