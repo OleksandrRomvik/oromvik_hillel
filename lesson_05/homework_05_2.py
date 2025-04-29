@@ -28,15 +28,16 @@ print("№1", people_records)
 
 # 2 - In modified list swap elements with indexes 1 and 5 (1<->5). Print result
 people_records_mod = people_records
-people_records_mod[1] = people_records[5]
-people_records_mod[5] = people_records[1]
+people_records_mod[1], people_records[5] = people_records_mod[5], people_records[1]
 print("№2", people_records_mod)
 
 # 3 - check that all people in modified list with records indexes 6, 10, 13
 #   have age >=30. Print condition check result
-old_people = []
-for i in [6, 10, 13]:
-    people = people_records[i]
-    if people[2] >= 30:
-        old_people.append(people)
-print("№3", old_people)
+indexes_to_check = [6, 10, 13]
+all_age_ok = True
+for i in indexes_to_check:
+    person = people_records_mod[i]
+    if person[2] < 30:
+        all_age_ok = False
+
+print("№3","All people with records indexes 6, 10, 13 >= 30:", all_age_ok)

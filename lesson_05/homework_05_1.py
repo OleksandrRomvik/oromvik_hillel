@@ -55,5 +55,5 @@ for car, stats in car_data.items():
         car_list.append((car, stats))
 
 car_list.sort(key=lambda x: x[1][4])
-print("Відсортований по рокам список авто", car_list)
+print("Відсортований по ціні список авто та ", car_list)
 print("Найдешевші 5 авто ", car_list[0:5])
