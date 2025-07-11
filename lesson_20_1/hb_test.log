@@ -1,0 +1,4 @@
+ERROR at 05:01:04 — Heartbeat gap: 33.0s
+WARNING at 05:01:36 — Heartbeat gap: 32.0s
+WARNING at 05:02:08 — Heartbeat gap: 32.0s
+ERROR at 05:03:00 — Heartbeat gap: 52.0s
