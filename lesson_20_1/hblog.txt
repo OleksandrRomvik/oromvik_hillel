@@ -1,0 +1,7 @@
+key_filter = "Key TSTFEED0300|7E3E|0400"
+[INFO] Timestamp 05:00:00 — Key TSTFEED0300|7E3E|0400 — OK
+[INFO] Timestamp 05:00:31 — Key TSTFEED0300|7E3E|0400 — OK
+[INFO] Timestamp 05:01:04 — Key TSTFEED0300|7E3E|0400 — ⚠️ Warning case (33s)
+[INFO] Timestamp 05:01:36 — Key TSTFEED0300|7E3E|0400 — ⚠️ Warning case (32s)
+[INFO] Timestamp 05:02:08 — Key TSTFEED0300|7E3E|0400 — ❌ Error case (32s)
+[INFO] Timestamp 05:03:00 — Key TSTFEED0300|7E3E|0400 — ❌ Error case (52s)
